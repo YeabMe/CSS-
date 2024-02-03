@@ -1,0 +1,369 @@
+/* --- CSS --- */ /* CSS stands for Cascading Style Sheets */
+
+/* Insert css */
+ -----------------------------------------------
+ /* External */
+   /* <link rel="stylesheet" href="style.css"> */
+
+ /* Internal */
+   /* <style> </style> */
+
+/* Inline */
+   /* <h1 style="color:blue;text-align:center;"> */
+ -----------------------------------------------
+
+
+
+/* Syntax */
+--------------------------
+selector { property:value; }
+--------------------------
+
+/* Selector */
+
+/* Universal selector */
+  * {
+     text-align: center;
+     color: blue;
+    }
+
+ /* Type */
+  h1 {
+    color:red;
+   }
+
+ /* Class */
+ .box {
+    color:red;
+   }
+
+ /* Id */
+ #unique {
+    color:red;
+   }
+
+/* Attribute */
+a[title] {
+    color: blue;
+}
+
+a[href="https://example.com"]
+{
+    color: blue;
+}
+
+/* Pseudo-classes & elements */
+a:hover {
+    color: rgb(120, 120, 153);
+}
+
+p::first-line {
+    color: rgb(120, 120, 153);
+}
+
+
+/* Combinator */
+article > p {
+    color: rgb(120, 120, 153);
+}
+
+/* Selcector End */
+
+------------------------------
+
+
+/* Color */
+h1{
+    color: black;
+    color: #699696;
+    color: hsl(160, 100%, 75%);
+    color: rgb(240, 255, 255);
+}
+
+/* Background */
+p{
+    background-color: aqua;
+
+    background-image: url(img_flwr.gif), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+
+    background-size: contain;
+    background-size: cover;
+    background-size: 100%;
+
+    background-origin: border-box;
+    background-origin: content-box;
+    background-origin: padding-box;
+    
+    background-attachment: fixed;
+    background-attachment: local;
+    background-attachment: scroll;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+ 
+/* Border */
+h2{
+    border: 1px solid #699696;
+    border-width: 0ch;
+    border-color: #699696;
+    border-top: #699696;
+    border-bottom: #699696;
+    border-left: #699696;
+    border-right: #699696;
+    border-radius: #000;
+}
+
+/* margin */
+h3{
+    margin: 10px;
+    margin: 10px 10px ;
+    margin: 10px 10px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+/* padding */
+h4{
+    padding: auto;
+    padding: 8px;
+    padding: 8px 8px;
+    padding: 8px 8px 8px 8px;
+}
+
+/* height & width */
+h5{
+    height: auto;
+    height: fit-content;
+    height: max-content;
+    height: min-content;
+
+    width: auto;
+    width: fit-content;
+    width: max-content;
+    width: min-content;
+}
+
+/* outline */
+h6{
+    outline: auto;
+    outline-style:dashed ,dotted, double, solid, groove, ridge, inset, outset, none, hidden;
+    outline-offset: 50%;
+    outline-color: #000;
+    outline-width: 100%;
+}
+
+/* text */
+p{
+   color: #000;
+   text-align: center, end, justify;
+   text-decoration: dashed, double, dotted, none;
+   text-transform: capitalize, uppercase, lowercase;
+   text-shadow: none;
+   text-rendering: auto;
+}
+
+/* font */
+h1{
+    font: 600;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-style: italic, oblique, bold, normal;
+}
+
+/* links */
+
+a{
+  color: aqua;
+}
+
+a:hover{
+    color: aliceblue;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    color: blue;
+}
+
+/* List */
+
+ul.a {
+    list-style-type: circle;
+    list-style-position: outside;
+
+    list-style: square inside url('image-1.png');
+}
+
+ul {
+    list-style-image: url('image-1.png');
+}
+
+ol {
+    background: #000;
+}
+
+ul li{
+    color: #000;
+}
+
+ol li{
+    color: #699696;
+}
+
+/* table */
+
+table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+th{
+    height: 200px;
+    text-align: center;
+}
+
+td{
+    height: 200px;
+    text-align: center;
+}
+
+table, th, td{
+    border: #000;
+    border-collapse: collapse;
+}
+
+
+
+/* display */
+p{
+    display: none;
+    display: inline;
+    display: block;
+    display: inline-block;
+    display: flex;
+    display: grid;
+
+    /* Block : div , h1-h6, p, form, header, footer, section */
+    /* Inline : span, a, img */
+    
+}
+
+/* postion */
+
+h1{
+    position: absolute;
+    position: relative;
+    position: fixed;
+    position: static;
+    position: sticky;
+}
+
+/* z index */
+
+h2{
+    z-index: -1;
+    z-index: 999;
+}
+
+/* overflow */
+
+h3{
+    overflow: auto;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow-wrap: normal;
+}
+
+/* float */
+p{
+    float: none;
+    float: left;
+    float: right;
+    float: inherit;
+}
+
+/* combinator */
+
+ /* Descendant Selector ( space ) */
+div p {
+    background-color: yellow;
+  }
+
+ /* Child Selector (>) */
+div > p {
+  background-color: yellow;
+}
+
+ /* Adjacent Sibling Selector (+) */
+div + p {
+    background-color: yellow;
+  }
+
+ /* General Sibling Selector (~) */
+div ~ p {
+    background-color: yellow;
+  }
+
+
+/* opacity */
+
+img{
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1.0;
+}
+
+/* input */
+input{
+    width: 100%;
+    padding: auto;
+    margin: auto;
+}
+
+/* header */
+header{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
+
+-----------------------------------------------------------
+/* rounded corner */
+
+div{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+img{
+    border: 10px solid transparent;
+    padding: 10px;
+    border-image: url(img.png) 30 round;
+    /* or */
+    border-image: url(border.png) 30 stretch;
+}
+
+/* shadows */
+
+p{
+    text-shadow: 2px 2px;
+    box-shadow: 2px #000;
+}
+
